@@ -5,7 +5,8 @@
     <head>
         <title>Whiskey Drop / Taste a new whiskey every month</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--always ensure to have the viewport meta tag in the head, for responsive design-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     
@@ -16,37 +17,47 @@
             <section class="callout">
                 <!--.callout in my css-->
                 <h1>The finest whiskeys delivered to your doorstep</h1>
-                <p>Sign up today and start receiving the worlds best whiskeys every month. First one is free!</p>
+                <!--in the following p tag, i gave it a class "lead" which will define the text even more, the <s> tag strikes a line through the price,
+                the <mark> tag highlights the following text-->
+                <p class="lead">Sign up today and start receiving the worlds best whiskeys every month. <s>€19.99</s><strong><mark>First one is free!</mark></strong></p>
+                <p><button class="btn btn-lg btn-success">Sign Up</button></p>
+                <!--i put in the btn-lg and the btn-success classes on my button to make it bigger and stand out-->
+                <p class="text-muted">You must be over 18 to sign up. Please drink responsibly.</p>
             </section>
 
 <!--.quotes-->
         <section class="quotes"></section>
-        <h2>Quotes</h2>
-        <div class="quote">
+        <h2 class="text-uppercase">Quotes</h2>
+        <blockquote class="quote"><!--put in blockquote instead of div for semantics and better appearance-->
             <!--.quote-->
             <p>I've been introduced to 10 different whiskeys over the last few months.</p>
-            <p>Jane Doe</p>
-        </div>
-        <div class="quote">
+            <footer>Jane Doe<cite title="Twitter">Twitter</cite></footer>
+        </blockquote>
+        <blockquote class="quote">
             <p>I haven't been sober for months!</p>
-            <p>Joe Bloggs</p>
-        </div>
+            <footer>Joe Bloggs<cite title="Twitter">Twitter</cite></footer>
+            <!--put in footer and the cite tag for better appearance and semantics-->
+        </blockquote>
         
         <section class="features">
             <!--.features-->
-            <h2>Features</h2>
+            <h2 class="text-uppercase">Features</h2>
             <div class="feature">
                 <!--.feature-->
                 <h3>Feature 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
+                <!--to add a small button under each...-->
+                <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
             </div>
             <div class="feature">
                 <h3>Feature 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
             </div>
             <div class="feature">
                 <h3>Feature 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
+                <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
             </div>
         </section>
        </article>
