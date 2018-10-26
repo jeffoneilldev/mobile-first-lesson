@@ -11,85 +11,127 @@
 </head>
 
 <body>
-
+    <!--nav-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!--logo-->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">Whiskey Drop</a>
+            </div>
+            <!--navbar-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li class="visible-xs"><a href="">Sign in</a></li>
+            </ul>
+            <!--message-->
+            <div class="navbar-header navbar-right hidden-xs">
+                <a href="/Login" class="btn btn-default navbar-btn">Sign up</a>
+                <p class="navbar-text"><i>Great whiskey delivered to your door.</i></p>
+            </div>
+        </div>
+    </nav>
     <article class="container">
         <!--.container in css-->
-        <div class="row">
+        <!--Alert-->
+        <div class="row hidden-xs">
             <div class="col-xs-12">
-                <section class="callout">
+                <div class="alert alert-warning">
+                    <strong>Sale now on!</strong> Get a 12 month subscription for the price of 6 <a href=""See here for more details></a></div>
+        </div></div>
+        <div class="row">
+            <div class="col-xs-12 ">
+                <section class="callout jumbotron text-center ">
                     <!--.callout in my css-->
                     <h1>The finest whiskeys delivered to your doorstep</h1>
-                    <!--in the following p tag, i gave it a class "lead" which will define the text even more, the <s> tag strikes a line through the price,
+                    <!--in the following p tag, i gave it a class "lead " which will define the text even more, the <s> tag strikes a line through the price,
                 the <mark> tag highlights the following text-->
-                    <p class="lead">Sign up today and start receiving the worlds best whiskeys every month. <s>€19.99</s><strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up</button></p>
+                    <p class="lead ">Sign up today and start receiving the worlds best whiskeys every month. <s class="hidden-xs ">€19.99</s><span class="visible-xs "><br></span><strong><mark>First one is free!</mark></strong></p>
+                    <p><button class="btn btn-lg btn-success ">Sign Up</button></p>
                     <!--i put in the btn-lg and the btn-success classes on my button to make it bigger and stand out-->
-                    <p class="text-muted">You must be over 18 to sign up. Please drink responsibly.</p>
+                    <p class="text-muted ">You must be over 18 to sign up. Please drink responsibly.</p>
                 </section>
             </div>
         </div>
         <!--.quotes-->
-        <section class="quotes"></section>
+        <section class="quotes "></section>
         <div class="row">
-            <div class="col-xs-12">
-                <h2 class="text-uppercase">Quotes</h2>
+            <div class="col-xs-12 ">
+                <div class="page-header ">
+                <h2 class="text-uppercase ">Quotes</h2>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <blockquote class="quote">
+        <div class="row ">
+            <div class="col-xs-12 col-md-6 ">
+                <div class="media ">
+                    <div class="media-left hidden-xs ">
+                        <img src="images/girl.jpg " class="image-circle media-object " height="100 " width="100 ">
+                    </div>
+                    <div class="media-body ">
+                <blockquote class="quote ">
                     <!--put in blockquote instead of div for semantics and better appearance-->
                     <!--.quote-->
                     <p>I've been introduced to 10 different whiskeys over the last few months.</p>
-                    <footer>Jane Doe<cite title="Twitter">Twitter</cite></footer>
+                    <footer>Jane Doe<cite title="Twitter ">Twitter</cite></footer>
                 </blockquote>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <blockquote class="quote">
+            </div>
+                </div>
+            <div class="col-xs-12 col-md-6 ">
+                <div class="media ">
+                    <div class="media-left hidden-xs ">
+                        <img src="images/girl.jpg " class="image-circle media-object " height="100 " width="100 ">
+                    </div>
+                    <div class="media-body ">
+                <blockquote class="quote ">
                     <p>I haven't been sober for months!</p>
-                    <footer>Joe Bloggs<cite title="Twitter">Twitter</cite></footer>
+                    <footer>Joe Bloggs<cite title="Twitter ">Twitter</cite></footer>
                     <!--put in footer and the cite tag for better appearance and semantics-->
                 </blockquote>
+            </div>
             </div>
         </div>
         <section class="features">
             <!--.features-->
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="text-uppercase">Features</h2>
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <div class="page-header ">
+                    <h2 class="text-uppercase ">Features</h2>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="feature">
-                    <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4 ">
                         <!--.feature-->
-                        <h3>Feature 1</h3>
+                        <h3><span class="glyphicon glyphicon-th-large hidden-xs "></span>Feature 1<span class="label label-success ">New!</span></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
                         <!--to add a small button under each...-->
-                        <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
+                        <p><a class="btn btn-sm btn-default " href=" ">Read more</a></p>
                     </div>
                 </div>
 
                 <div class="feature">
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <h3>Feature 2</h3>
+                    <div class="col-xs-12 col-md-6 col-lg-4 ">
+                        <h3><span class="glyphicon glyphicon-cog hidden-xs "></span>Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
-                        <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
+                        <p><a class="btn btn-sm btn-default " href=" ">Read more</a></p>
                     </div>
                 </div>
                 <div class="feature">
-                    <div class="col-xs-12 hidden-md col-lg-4">
-                        <h3>Feature 3</h3>
+                    <div class="col-xs-12 hidden-md col-lg-4 ">
+                        <h3><span class="glyphicon glyphicon-star-empty hidden-xs "></span>Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio beatae rerum, voluptatem, in illum provident atque odio.</p>
-                        <p><a class="btn btn-sm btn-default" href="">Read more</a></p>
+                        <p><a class="btn btn-sm btn-default " href=" ">Read more</a></p>
                     </div>
                 </div>
             </div>
         </section>
         <!--the challenge is to add a table here-->
-        <section class="monthlyfavourites"></section>
-        <h2 class="text-uppercase">Monthly Favourites</h2>
-        <table class="table" border="1">
+        <section class="monthlyfavourites "></section>
+        <h2 class="text-uppercase ">Monthly Favourites</h2>
+        <table class="table " border="1 ">
             <tr>
                 <td><strong>Name</td>
             <td><strong>Origin</td></tr>
